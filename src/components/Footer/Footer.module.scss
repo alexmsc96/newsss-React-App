@@ -1,0 +1,18 @@
+@import '../../utilities/utility-classes.scss';
+
+.Footer {
+    width: 100vw;
+    background-color: $color-primary;
+    margin-top: 2rem;
+    
+    .FooterContent {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem;
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+        font-family: $font-secondary;
+        font-weight: normal;
+    }
+}

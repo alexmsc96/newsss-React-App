@@ -1,0 +1,19 @@
+@import '../../utilities/utility-classes.scss';
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $desktop-width;
+    margin: 0 auto;
+
+    .LogoContainer {
+        width: 9rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .Container {
+        width: $mobile-width;
+    }
+}

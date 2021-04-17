@@ -1,0 +1,9 @@
+@import "../../../utilities/utility-classes.scss";
+
+.Error {
+  font-family: $font-primary;
+  font-size: 3rem;
+  text-align: center;
+  color: $color-primary;
+  opacity: 0.8;
+}

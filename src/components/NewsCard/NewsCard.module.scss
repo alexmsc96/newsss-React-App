@@ -1,0 +1,94 @@
+@import '../../utilities/utility-classes.scss';
+
+.NewsCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    box-shadow: 0 0 15px 4px rgba($color: #000000, $alpha: .1);
+    border-radius: 10px;
+    background-color: $bg-white;
+    max-width: 40rem;
+    position: relative;
+    transition: transform .5s ease;
+    animation: fade .5s ease;
+
+    &:hover {
+        transform: translateY(-1%);
+    }
+    
+    @keyframes fade {
+        0% { 
+            opacity: 0;
+            transform: translateY(2%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    .Title {
+        font-size: 2rem;
+        font-weight: 900;
+        width: 90%;
+        padding: 1rem 0 .5rem 0;
+        text-decoration: none;
+        color: $color-secondary;
+        transition: color .2s;
+    }
+
+    .Img {
+        height: 20rem;
+        width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+    }
+
+    .Description {
+        font-family: $font-secondary;
+        font-size: 1.6rem;
+        font-weight: 500;
+        width: 90%;
+        padding: 2rem 0 4rem 0;
+    }
+    
+    .Data {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        font-size: 1.2rem;
+        color: $color-primary;
+        font-weight: 700;
+    }
+
+    .Url {
+        color: $color-secondary;
+        text-decoration: none;
+        font-family: inherit;
+        position: absolute;
+        bottom: .5rem;
+        right: 2rem;
+        font-size: 1.1rem;
+        transition: color .2s;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        span {
+            font-size: 1.5rem;  
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .NewsCard{ 
+        width: 95vw;
+    }
+}

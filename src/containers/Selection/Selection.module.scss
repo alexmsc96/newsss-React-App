@@ -1,0 +1,67 @@
+@import '../../utilities/utility-classes.scss';
+
+.SelectionMobileOnly {
+    display: block;
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow:0 0 10px .3px rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    font-size: 1.35rem;
+    font-family: inherit;
+    text-transform: capitalize;
+    color: $color-secondary;
+
+    &:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 5px 1px $color-primary;
+        color: #222; 
+        outline: none;
+      }
+}
+
+.Selection {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .SelectionMobileOnly {
+        display: none;
+    }
+
+    .Selection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem auto;
+        width: 75%;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    
+        li {
+            background-color: $bg-white;
+            list-style: none;
+            padding: 1rem 3rem;
+            box-shadow:0 0 10px .3px rgba(0,0,0,0.2);
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: all .5s ease;
+            text-align: center;
+            flex: 1;
+            color: $color-secondary;
+            font-size: 1.35rem;
+            font-weight: 700;
+            text-transform: capitalize;
+            text-decoration: none;
+            
+            &:hover,
+            &:focus {
+                box-shadow: 0 0 5px 1px $color-primary;
+                transform: translateY(-5%);
+            }
+        }  
+    }
+}

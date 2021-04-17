@@ -1,0 +1,7 @@
+export const GET_NEWS_SUCCESS = 'GET_NEWS_SUCCESS';
+export const GET_SOURCES_DATA_SUCCESS = 'GET_SOURCES_DATA_SUCCESS'
+
+export const GET_NEWS_FAILED = 'GET_NEWS_FAILED';
+
+export const SET_COUNTRY = 'SET_COUNTRY'
+export const SET_QUERY = 'SET_QUERY'

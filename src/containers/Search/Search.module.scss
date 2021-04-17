@@ -1,0 +1,25 @@
+@import '../../utilities/utility-classes.scss';
+
+.Search {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow:0 0 15px 1px rgba(0,0,0,0.2);
+    color: $color-secondary;
+    font-size: 1.6rem;
+    font-family: inherit;
+    transition: all .2s;
+    width: 100%;
+
+    &:focus {
+        outline: none ;
+        box-shadow: 0 0 5px 1px $color-primary;
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 530px) {
+    .SearchForm {
+        margin-left: 2rem;
+    }
+}

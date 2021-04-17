@@ -1,0 +1,45 @@
+@import '../../utilities/utility-classes.scss';
+
+
+.CountryPicker {
+    width: $desktop-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+            
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: grey;
+    }
+
+    select {
+        padding: .5rem;
+        border: none;
+        border-radius: 1rem;
+        box-shadow:0 0 10px .3px rgba(0,0,0,0.2);
+        border-radius: 1rem;
+        font-size: 1.35rem;
+        font-family: $font-primary;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: $color-secondary;
+
+        option:focus,
+        option:hover {
+            border-color: #aaa;
+            box-shadow: 0 0 5px 1px $color-primary;
+            color: #222; 
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .CountryPicker {
+        width: 90%;
+    }
+}
