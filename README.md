@@ -20,7 +20,7 @@ NewsApi doesn't allow requests from other sources apart from localhost so I get 
 3. npm install 
 4. npm run
 
-Additionally, you need to add your own API key inside axios.js
+Additionally, you need to add your own API key inside .env
 
 ### Thoughts
 
