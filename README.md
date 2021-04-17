@@ -1,5 +1,5 @@
 # newsss - Latest Headlines
-
+![newsss mock-up](https://user-images.githubusercontent.com/62430558/115125710-a380ae00-9fd2-11eb-9b95-5f63f8d2dc37.png)
 _NewsApi, React, Redux,Axios, SCSS_
 
 ## Description
