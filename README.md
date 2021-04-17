@@ -11,7 +11,7 @@ This application consists of a news app where users are able to:
 
 ## Demo
 
-**[Check it out]**
+NewsApi doesn't allow requests from other sources apart from localhost so I get a CORS error when deploying to Heroku.
 
 ## To run locally
 
@@ -32,3 +32,4 @@ For the future:
 - better organization of the code
 - add a watchlist part for the application
 - better use of SCSS variables
+- move the request from the Api to the back-end
